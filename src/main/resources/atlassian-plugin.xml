@@ -51,20 +51,5 @@
 </web-panel>
 
 
-    <web-section location="jira.agile.board.tools" key="my.custom-board-tool-section" weight="10"> 
-    <label key="gh.board.tools.reference.button"/> 
-    <condition class="com.atlassian.greenhopper.client.web.condition.BoardModeCondition"> 
-        <param name="mode">work</param> 
-    </condition> 
-</web-section>
-
-<web-panel key="board-tools-webpanel" location="my.custom-board-tool-section" weight="100">
-    <resource name="view" type="velocity" location="templates/board-tools-webpanel.vm" />
-    <context-provider class="com.atlassian.jira.plugin.webfragment.contextproviders.DefaultVelocityContextProvider" />
-</web-panel>
-    <web-item section="my.custom-board-tool-section" key="my-custom-web-item" weight="10">
-    <label key="gh.rapid.operations.configure"/>
-    <link>/secure/RapidView.jspa?rapidView=${board.id}</link>
-</web-item>
 
 </atlassian-plugin>
