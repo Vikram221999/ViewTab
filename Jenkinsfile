@@ -4,7 +4,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Hello World'
-                bat  'atlas-compile'
+                bat 'atlas-compile'
             }
         }
       
